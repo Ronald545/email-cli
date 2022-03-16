@@ -5,7 +5,8 @@ flexible and extendible script to send email
 ## Installation 
 1. Make sure go is installed
 2. Run `go mod download` to install dependencies
-3. Run `sudo make install` to install the binary
+3. Run `make build` to compile source code
+4. Run `sudo make install` to install the binary
 
 ## Usage
 1) Login
