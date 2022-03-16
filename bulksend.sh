@@ -1,9 +1,10 @@
 #!/bin/bash
 
-FILE= # input file
+FILE="" # list of emails input file
+TEMPLATE="" # template file
 LINE=1
 while read -r CURRENT_LINE
   do
-    ./main send "$CURRENT_LINE" "$(cat new.txt)"
+    email-cli send "$CURRENT_LINE" "$(cat $TEMPLATE)"
     ((LINE++))
 done < "$FILE"
