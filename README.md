@@ -3,10 +3,15 @@
 flexible and extendible script to send email
 
 ## Installation 
+### Using Go Package Manager
+```sh
+go install github.com/Ronald545/email-cli 
+```
+
+### Building from Source 
 1. Make sure go is installed
 2. Run `go mod download` to install dependencies
-3. Run `make build` to compile source code
-4. Run `sudo make install` to install the binary
+3. Run `sudo make install` to build and install the binary
 
 ## Usage
 1) Login
@@ -17,7 +22,7 @@ proceed to enter email and password
 
 2) Send
 ```sh 
-  email-cli send <email@address.com> <message>
+  email-cli send <email@address.com> "subject" "message"
 ```
 
 3) If you wish to send emails to a list of people using a template, refer to [this](./bulksend.sh) bash script

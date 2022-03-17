@@ -44,9 +44,9 @@ var CmdLogin = &cobra.Command{
 		// storing email and password in file to persist user session
 		storagePath, err := os.UserHomeDir()
 		storagePath = storagePath + "/.config/email-cli/"
-		if _, err := os.Stat(storagePath+".netrc"); os.IsNotExist(err) {
+		if _, err := os.Stat(storagePath + ".netrc"); os.IsNotExist(err) {
 			os.MkdirAll(storagePath, 0700)
-			f, err := os.Create(storagePath+".netrc")
+			f, err := os.Create(storagePath + ".netrc")
 			if err != nil {
 				return err
 			}

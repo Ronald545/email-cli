@@ -16,6 +16,6 @@ func main() {
 	}
 
 	rootCmd.AddCommand(cmd.CmdLogin)
-  rootCmd.AddCommand(cmd.SendCmd)
+	rootCmd.AddCommand(cmd.SendCmd)
 	rootCmd.Execute()
 }
